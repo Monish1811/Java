@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class test2 {
+    public static void main(String[] args) {
+       Scanner input=new Scanner(System.in); 
+       int a[]={4,6,7,12,89,54,76,100,45,1};
+       int len=a.length;
+       Arrays.sort(a);
+       int N=4;
+       System.out.println(N+" largest number is: "+a[len-N]);
+       System.out.println(N + " smallest number is: " + a[N - 1]);
+
+    }
+}
