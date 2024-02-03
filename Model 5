@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class cv 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in); 
+		System.out.print("Enter the Words:");
+		String name=sc.nextLine(); 
+		int len=name.length(); 
+		char a[]=new char[len];
+		String vowels=" ";
+		String cons=" ";
+		for(int i=0;i<len;i++)
+			{ 
+				a[i]=name.charAt(i); 
+				if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u' 
+					||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U') 
+					vowels=vowels+a[i];
+				else if((a[i]!='a'||a[i]!='e'||a[i]!='i'||a[i]!='o'||a[i]!='u' 
+					||a[i]!='A'||a[i]!='E'||a[i]!='I'||a[i]!='O'||a[i]!='U')) 
+					cons=cons+a[i];
+				else{
+					System.out.print("INVALID INPUTS");
+					}
+			} 
+		System.out.print(vowels+"\n");
+		System.out.print(cons+"\t");
+	}
+}
